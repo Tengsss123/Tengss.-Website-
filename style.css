@@ -1,0 +1,222 @@
+html{
+  font-size:20px;
+}
+body{
+  width:100%;
+  height:100vh;
+  overflow-x: hidden;
+  background-color:teal;
+  color:black;
+}
+header{
+  margin-top:10px;
+  position: fixed;
+  top:0;
+  left:50px;
+  width:90%;
+  padding:1rem%;
+  background-color: transparent;
+  filter:drop-shadow10px;
+  display: wrap;
+  justify-content:space-between;
+  align-items:center;
+  z-index:100%;
+}
+.Logo{
+  font-size:100px;
+  padding:1rem;
+  color:#87CEEB;
+  font-weight:1000;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.Logo:hover{
+  transition:scale(1.1);
+}
+nav a{
+  font-size:25px;
+  color: white;
+  margin:100px;
+  font-weight:1000;
+  transition:0.3s ease;
+  border-bottom:2px solid transparent;
+}
+nav a:hover,
+nav a:active{
+  color:#87CEEB;
+  border-bottom:2px solid #87CEEB ;
+}
+nav{
+  position: absolute;
+  top:20%;
+  right:0;
+  left:40%;
+  width:90%;
+  border-left: px solid #87CEEB;
+  border-bottom:px solid #87CEEB;
+  border-bottom-left-radius:0.2rem;
+  padding:0.0rem;
+  border-top:0.0rem solid rgba(0,0,0,0.1);
+}
+nav:active{ 
+  display: wrap;
+}
+nav a{
+  display: wrap;
+  font-size:100;
+  margin:0.5rem;
+}
+nav a:hover,
+nav a:active{
+  padding:0.5rem;
+  border-radius: 0.5rem;
+  border-bottom:0.rem #87CEEB;
+ }
+section{
+  min-height:100vh;
+  padding:1rem;
+}
+.home{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+.home,
+.home-content h1{
+  font-size:20px;
+  font-weight: 1000;
+  line-height:1.9;
+  margin-top:50px;
+}
+span{
+  color:#87CEEB;
+}
+.home-content h3{
+  font-size:20px;
+  font-weight:700;
+  line-height:1.3;
+  margin-top:25px;
+}
+.home-img{
+  border-radius:40%;
+}
+.home-img img{
+  position: center;
+  width:450px;
+  height:300px;
+  margin-top:30px;
+  border-radius:25vw;
+  box-shadow: 0 0 25px #87CEEB ;
+  cursor: pointer;
+  transition: 0.2 linear;
+}
+.home-img img:hover{
+  font-size: 1.8rem
+  font-weight:500;
+}
+.social-icons img{
+display:inline-flex;
+justify-content: center;
+align-items: center;
+width: 2rem;
+height:2rem;
+background-color:transparent;
+border:0.2rem solid#87CEEB;
+font-size:2rem;
+border-radius:20%;
+margin:3rem 0.1 3rem 0;
+transition: 0.3s ease;
+color:white;
+}
+.social-icons img:Hover {
+  color:black;
+  transform: scale(1.3)translateY(-5px);
+  background-color:#87CEEB;
+  box-shadow: 0 0 25px #87CEEB;
+}
+.btn{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color:black;
+  border-radius:4rem;
+  font-size: 1.8rem;
+  color:#87CEEB;
+  letter-spacing: 0.3rem;
+  font-weight:700;
+  Border:2px solid #87CEEB;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover{
+  transform: scale3d(1.03);
+  background-color: #87CEEB;
+  color:black;
+  box-shadow:0 0 25px #87CEEB;
+}
+.typing-text{
+  font-size: 34px;
+  font-weight:600;
+  min-width: 280px;
+}
+.typing-text span{
+  position: relative;
+}
+.typing-text span:before{
+  content:" bawal mahalin";
+  color:#87CEEB;
+  animation:words 10s infinite;
+}
+.typing-text span:after{
+  content:"";
+  background-color:black;
+  position: absolute
+  width: calc(100% + 8px);
+  height:100%;
+  border-left:3px solid black;
+  right: -8;
+  animation:cursor 0.6s infinite;
+}
+@keyframes cursor{
+  to{
+    border-left:3px solid #87CEEB;
+  }
+}
+@keyframes words{
+  0%,20%{
+    content:" Mag mahal ka ng taong "}
+  }
+  21%,40%{
+    content:"Bossing";
+  }
+  41%,60%{
+    content:"Kupal kaba boss";
+  }
+  61%,80%{
+    content:" oonga ni";
+  }
+  81%,100%{
+    content:" Nyekk";
+  }
+}
+@media(max-width:600px){
+  .home{
+    gap: 1rem;
+  }
+}
+@media (max-width:995px){
+  .home{
+    flex-direction: column;
+    margin:5rem 4rem;
+  }
+  .home.home-content h3{
+    font-size: 2.5rem;
+  }
+  .home-content h1{
+    font-size:5rem;
+  }
+  .home-img img{
+  width:800px;
+  height:900px;
+  margin-top:4rem;
+  }
+}
